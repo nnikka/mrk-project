@@ -160,6 +160,13 @@ body {
     columns: #010101;
 }
 
+.pr-infobox-container {
+    padding: 2rem 1rem;
+    background: #01024E;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
 /* footer */
 .pr-footer {
     display: none;
@@ -279,6 +286,9 @@ body {
     background: #7a5586;
 }
 
+/* agree page */
+
+
 /* media query more than 425px */
 @media (min-width: 425px) {
     .pr-login-page-container {
@@ -346,6 +356,10 @@ body {
         padding: 1rem 5rem;
         min-height: calc(100vh - 13.7rem);
     }
+
+    .pr-infobox-container {
+        padding: 2rem 5rem;
+    }
     
 }
 
@@ -389,6 +403,10 @@ body {
 
     .pr-agree-content {
         padding: 1rem 15rem;
+    }
+
+    .pr-infobox-container {
+        padding: 2rem 6rem;
     }
 }
 
@@ -436,6 +454,10 @@ body {
     .pr-agree-content {
         padding: 1rem 20rem;
     }
+
+    .pr-infobox-container {
+        padding: 2rem 7rem;
+    }
 }
 
 /* media query more than 1024px */
@@ -481,6 +503,10 @@ body {
 
     .pr-agree-content {
         padding: 1rem 25rem;
+    }
+
+    .pr-infobox-container {
+        padding: 2rem 8rem;
     }
 }
 
@@ -530,6 +556,10 @@ body {
     .pr-agree-content {
         width: 30rem;
         margin-left: calc(50% - 40rem);
+    }
+
+    .pr-infobox-container {
+        padding: 2rem 9rem;
     }
 }
 
