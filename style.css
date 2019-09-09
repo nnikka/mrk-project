@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.header-5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff6464;
+    margin: 0.3rem 0rem;
+}
+
+.header-6 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.3rem 0rem;
+}
+
+.pr-mega-button {
+    width: 100%;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color: white;
+    background-color: gray;
+}
+
+.pr-facebook-bg {
+    background-color: #41598f;
+}
+
+.pr-google-bg {
+    background-color: #d75c48;
+}
+
+.pr-header-text {
+    margin: 0px;
+    color: white;
+    text-align: justify;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.pr-faq-text {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #01024E;
+    text-align: center;
+}
+
+.faq-link {
+    color: #ff6464;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pr-dark-card {
+    padding: 0.8rem 1rem;
+    background: #00000042;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.pr-dark-card p {
+    margin: 0;
+}
+
+/* login page */
+.pr-login-page-container {
+    background: grey;
+    min-height: calc(100vh - 6rem);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: url(./images/loginbackground.png) no-repeat top left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pr-login-logo-container {
+    text-align: center;
+}
+
+.pr-login-logo {
+    height: 5rem;
+}
