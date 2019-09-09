@@ -53,6 +53,8 @@ body {
     font-size: 0.8rem;
     color: #01024E;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3px;
 }
 
 .faq-link {
@@ -73,6 +75,11 @@ body {
 
 .pr-dark-card p {
     margin: 0;
+}
+
+/* footer */
+.pr-footer {
+    display: none;
 }
 
 /* login page */
@@ -96,4 +103,101 @@ body {
 
 .pr-login-logo {
     height: 5rem;
+}
+
+/* media query more than 425px */
+@media (min-width: 425px) {
+    .pr-login-page-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .pr-login-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .pr-footer {
+        display: block;
+        background: #01024E;
+    }
+    .pr-footer-content {
+        padding: 1rem 5rem;
+    }
+    .footer-header {
+        margin-top: 0px;
+        color: white;
+        font-weight: 300;
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+        margin-bottom: 1rem;
+    }
+    .footer-header span {
+        color: #ff6464;
+    }
+    .pr-footer-text {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        font-size: 0.7rem;
+        color: #808080d9;
+        font-weight: bold;
+    }
+}
+
+/* media query more than 768px */
+@media (min-width: 768px) {
+    .pr-login-page-container {
+        padding-left: 11rem;
+        padding-right: 11rem;
+    }
+    .pr-login-content {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .pr-footer-content {
+        padding: 1rem 6rem;
+    }
+}
+
+/* media query more than 768px */
+@media (min-width: 900px) {
+    .pr-login-page-container {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+    .pr-login-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .pr-footer-content {
+        padding: 1rem 7rem;
+    }
+}
+
+/* media query more than 1024px */
+@media (min-width: 1024px) {
+    .pr-login-page-container {
+        padding-left: 19rem;
+        padding-right: 19rem;
+    }
+    .pr-login-content {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .pr-footer-content {
+        padding: 1rem 8rem;
+    }
+}
+
+/* media query more than 1200px */
+@media (min-width: 1200px) {
+    .pr-login-page-container {
+        text-align: center;
+    }
+    .pr-login-xs-container {
+        width: 540px;
+        display: inline-block;
+    }
+    .pr-footer-content {
+        padding: 1rem 9rem;
+    }
 }
