@@ -329,6 +329,14 @@ body {
     padding: 1rem;
 }
 
+/* pay page */
+.pr-pay-content {
+    padding: 1rem;
+}
+.pr-cards {
+    width: 100%;
+}
+
 
 /* media query more than 425px */
 @media (min-width: 425px) {
@@ -408,6 +416,13 @@ body {
     .pr-kit-container {
         min-height: calc(100vh - 11.7rem);
     }
+
+    .pr-pay-content {
+        padding: 2rem 5rem;
+    }
+    .pr-pay-container {
+        min-height: calc(100vh - 11.7rem);
+    }
     
 }
 
@@ -465,6 +480,10 @@ body {
         margin-right: -1rem;
         padding: 2rem 1rem;
     }
+
+    .pr-pay-content {
+        padding: 2rem 15rem;
+    }
 }
 
 /* media query more than 768px */
@@ -518,6 +537,10 @@ body {
 
     .pr-kit-content {
         padding: 3rem 20rem;
+    }
+
+    .pr-pay-content {
+        padding: 2rem 20rem;
     }
 }
 
@@ -578,6 +601,10 @@ body {
         margin-right: -2em;
         padding: 2rem 2rem;
     }
+
+    .pr-pay-content {
+        padding: 2rem 25rem;
+    }
 }
 
 /* media query more than 1200px */
@@ -633,6 +660,11 @@ body {
     }
 
     .pr-kit-content {
+        width: 30rem;
+        margin-left: calc(50% - 41rem);
+    }
+
+    .pr-pay-content {
         width: 30rem;
         margin-left: calc(50% - 41rem);
     }
@@ -707,4 +739,8 @@ body {
 
 *, ::before, ::after {
     box-sizing: content-box !important;
+}
+
+.checkmark-up-over {
+    top: -6px;
 }
