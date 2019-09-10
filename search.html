@@ -1,0 +1,236 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./flexboxgrid.min.css" type="text/css">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <nav class="pr-navigation">
+        <div class="pr-navigation-content">
+            <img src="./images/little-logo2.png" class="pr-nav-logo" />
+            <i onclick="openMenu()" class="fa fa-bars pr-nav-menu-butt" aria-hidden="true"></i>
+        </div>
+
+        <div class="pr-menu" id="appMainMenu">
+            <div class="pr-menu-content">
+                <div class="pr-menu-header">
+                    <img src="./images/little-logo2.png" class="pr-menu-logo" />
+                    <i onclick="closeMenu()" class="fa fa-close pr-nav-menu-close-butt" aria-hidden="true"></i>
+                </div>
+                <div class="pr-menu-body">
+                    <a class="pr-menu-link" href="#">Price My Car</a>
+                    <a class="pr-menu-link" href="#">My Account</a>
+                    <a class="pr-menu-link" href="#">Search History</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="pr-app-container">
+
+        <div class="pr-search-container">
+
+            <div class="pr-light-bg">
+                <div class="pr-car-info-content">
+                    <div class="pr-searched-info">
+                        <div>
+                            <h3 class="header-3">
+                                FORD
+                            </h3>
+                            <h4 class="header-4">
+                                B-MAX TITANIUM AUTO
+                            </h4>
+                        </div>
+                        <br>
+                        <div class="pr-img-info-container">
+                            <div class="pr-searched-image-container">
+                                <img src="/images/car.jpg" />
+                            </div>
+                            <div class="pr-car-info-container">
+                                <div class="row mrg-top-10">
+                                    <div class="col-xs-5">
+                                        <span class="pr-car-info-option">REGISTERED:</span>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <span class="pr-car-info-value">2012-02-13T00:00:00</span>
+                                    </div>
+                                </div>
+                                <div class="row mrg-top-10">
+                                    <div class="col-xs-5">
+                                        <span class="pr-car-info-option">YEAR:</span>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <span class="pr-car-info-value">2012</span>
+                                    </div>
+                                </div>
+                                <div class="row mrg-top-10">
+                                    <div class="col-xs-5">
+                                        <span class="pr-car-info-option">COLOUR:</span>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <span class="pr-car-info-value">Red</span>
+                                    </div>
+                                </div>
+                                <div class="row mrg-top-10">
+                                    <div class="col-xs-5">
+                                        <span class="pr-car-info-option">NO OWNERS:</span>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <span class="pr-car-info-value">2</span>
+                                    </div>
+                                </div>
+                                <div class="row mrg-top-10">
+                                    <div class="col-xs-5">
+                                        <span class="pr-car-info-option">GEERBOX:</span>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <span class="pr-car-info-value">Automatic</span>
+                                    </div>
+                                </div>
+                                <div class="row mrg-top-10">
+                                    <div class="col-xs-5">
+                                        <span class="pr-car-info-option">FUEL:</span>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <span class="pr-car-info-value">Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="row mrg-top-10">
+                                    <div class="col-xs-5">
+                                        <span class="pr-car-info-option">ENGINE:</span>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <span class="pr-car-info-value">1556</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pr-car-info-additional-content">
+                <div class="pr-car-info-grid-container">
+                    <div class="pr-car-sale-container">
+                        <div class="row pr-additional-info-row">
+                            <div class="col-xs-5">
+                                <span class="pr-info-bold-txt">Private Sale</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <span class="pr-info-light-txt">USD $</span>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="pr-info-pink-txt">350</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-car-sale-container">
+                        <div class="row pr-additional-info-row">
+                            <div class="col-xs-5">
+                                <span class="pr-info-bold-txt">Dealer Price</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <span class="pr-info-light-txt">USD $</span>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="pr-info-pink-txt">350</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-car-sale-container">
+                        <div class="row pr-additional-info-row">
+                            <div class="col-xs-5">
+                                <span class="pr-info-bold-txt">Part Exchange</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <span class="pr-info-light-txt">USD $</span>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="pr-info-pink-txt">350</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-car-sale-container">
+                        <div class="row pr-additional-info-row">
+                            <div class="col-xs-5">
+                                <span class="pr-info-bold-txt">Auction Sale</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <span class="pr-info-light-txt">USD $</span>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="pr-info-pink-txt">350</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pr-car-sale-container">
+                        <div class="row pr-additional-info-row">
+                            <div class="col-xs-5">
+                                <span class="pr-info-bold-txt">WeBuyAnyCar</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <span class="pr-info-light-txt">USD $</span>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="pr-info-pink-txt">350</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div><br></div>
+                <div class="pr-search-result-buttons">
+                    <div class="pr-search-pg-btn-container">
+                        <button class="pr-mega-button pr-pink-bg">
+                            Next
+                        </button>
+                    </div>
+                    <div class="pr-search-pg-btn-container">
+                        <button class="pr-mega-button pr-white-bg">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="pr-footer">
+        <div class="pr-footer-content">
+            <h4 class="footer-header">
+                price<span>mycar</span>
+            </h4>
+            <p class="pr-footer-text">c 2019 Price My Car. All rights reserved.</p>
+            <p class="pr-footer-text">Designed by TESLI boy</p>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    function openMenu() {
+        document.getElementById("appMainMenu").style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById("appMainMenu").style.display = "none";
+    }
+</script>
+
+</html>
