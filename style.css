@@ -85,6 +85,20 @@ body {
     cursor: pointer;
 }
 
+.pr-white-bg {
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.mrg-top-10 {
+    margin-top: 0.5rem;
+}
+
+.pr-light-bg {
+    background-color: #ccccccb3;
+}
+
 .pr-facebook-bg {
     background-color: #41598f;
 }
@@ -337,6 +351,64 @@ body {
     width: 100%;
 }
 
+/* search result page */
+.pr-searched-image-container img {
+    width: 100%;
+}
+
+.pr-search-container {
+    padding-bottom: 3rem;
+}
+
+.pr-car-info-option {
+    color: #01024e;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.pr-car-info-value {
+    color: #ff6464;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.pr-car-info-additional-content {
+    padding: 1rem;
+    padding-top: 0rem;
+}
+
+.pr-car-info-content {
+    padding: 1rem;
+}
+
+.pr-additional-info-row {
+    border-bottom: 1px solid #dbdbdb;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.pr-info-bold-txt {
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 700;
+}
+
+.pr-info-light-txt {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.pr-info-pink-txt {
+    font-size: 0.9rem;
+    color: #ff6464;
+    font-weight: 700;
+    display: block;
+    text-align: right;
+}
+
+.pr-search-pg-btn-container {
+    margin-top: 1rem;
+}
 
 /* media query more than 425px */
 @media (min-width: 425px) {
@@ -423,6 +495,17 @@ body {
     .pr-pay-container {
         min-height: calc(100vh - 11.7rem);
     }
+
+    .pr-search-container {
+        min-height: calc(100vh - 11.7rem);
+    }
+    .pr-car-info-content {
+        padding: 2rem 5rem;
+    }
+    .pr-car-info-additional-content {
+        padding: 2rem 5rem;
+        padding-top: 0rem;
+    }
     
 }
 
@@ -484,6 +567,14 @@ body {
     .pr-pay-content {
         padding: 2rem 15rem;
     }
+
+    .pr-car-info-content {
+        padding: 2rem 13rem;
+    }
+    .pr-car-info-additional-content {
+        padding: 2rem 13rem;
+        padding-top: 0rem;
+    }
 }
 
 /* media query more than 768px */
@@ -541,6 +632,42 @@ body {
 
     .pr-pay-content {
         padding: 2rem 20rem;
+    }
+
+    .pr-car-info-content {
+        padding: 2rem 9rem;
+    }
+    .pr-car-info-additional-content {
+        padding: 2rem 9rem;
+        padding-top: 0rem;
+    }
+    .pr-img-info-container {
+        height: 12rem;
+    }
+    .pr-searched-image-container {
+        float: right;
+        width: 42%;
+        height: 100%;
+        text-align: right;
+    }
+    .pr-searched-image-container img {
+        height: 100%;
+        width: auto;
+    }
+    .pr-car-info-container {
+        width: 55%;
+        float: left;
+    }
+    .pr-car-info-grid-container {
+        display: block;
+    }
+    .pr-car-info-grid-container {
+        padding: 0rem 6rem;
+    }
+    .pr-search-pg-btn-container {
+        margin-top: 1rem;
+        display: inline-block;
+        width: 49%;
     }
 }
 
@@ -605,6 +732,17 @@ body {
     .pr-pay-content {
         padding: 2rem 25rem;
     }
+
+    .pr-car-info-content {
+        padding: 2rem 15rem;
+    }
+    .pr-car-info-additional-content {
+        padding: 2rem 15rem;
+        padding-top: 0rem;
+    }
+    .pr-car-info-grid-container {
+        padding: 0rem 7rem;
+    }
 }
 
 /* media query more than 1200px */
@@ -668,6 +806,25 @@ body {
         width: 30rem;
         margin-left: calc(50% - 41rem);
     }
+
+    .pr-car-info-content {
+        width: 45rem;
+        width: 45rem;
+        margin-left: calc(50% - 37.7rem);
+    }
+    .pr-car-info-grid-container {
+        width: 30rem;
+        margin-left: calc(50% - 24rem);
+    }
+    .pr-search-result-buttons {
+        width: 45rem;
+        width: 45rem;
+        margin-left: calc(50% - 22.5rem);
+    }
+    /* .pr-car-info-additional-content {
+        width: 40rem;
+        padding-top: 0rem;
+    } */
 }
 
 /* checkbox */
@@ -743,4 +900,9 @@ body {
 
 .checkmark-up-over {
     top: -6px;
+}
+
+.row, 
+.col-xs, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    box-sizing: border-box !important;
 }
