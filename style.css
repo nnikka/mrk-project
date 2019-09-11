@@ -398,6 +398,12 @@ body {
     color: black;
 }
 
+.pr-info-light-txt-bld {
+    font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+}
+
 .pr-info-pink-txt {
     font-size: 0.9rem;
     color: #ff6464;
@@ -406,8 +412,33 @@ body {
     text-align: right;
 }
 
+/* damage */
+.pr-damage-content {
+    padding: 1rem;
+}
+
 .pr-search-pg-btn-container {
     margin-top: 1rem;
+}
+
+.galery-image-row img {
+    height: 4.5rem;
+}
+
+.galery-image-row button {
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    float: right;
+    margin-top: 1.2rem;
+}
+
+.galery-image-row {
+    background: #eee;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 /* media query more than 425px */
@@ -506,6 +537,10 @@ body {
         padding: 2rem 5rem;
         padding-top: 0rem;
     }
+
+    .pr-damage-content {
+        padding: 2rem 5rem;
+    }
     
 }
 
@@ -574,6 +609,10 @@ body {
     .pr-car-info-additional-content {
         padding: 2rem 13rem;
         padding-top: 0rem;
+    }
+
+    .pr-damage-content {
+        padding: 3rem 13rem;
     }
 }
 
@@ -669,6 +708,10 @@ body {
         display: inline-block;
         width: 49%;
     }
+
+    .pr-damage-content {
+        padding: 3rem 17rem;
+    }
 }
 
 /* media query more than 1024px */
@@ -742,6 +785,10 @@ body {
     }
     .pr-car-info-grid-container {
         padding: 0rem 7rem;
+    }
+
+    .pr-damage-content {
+        padding: 3rem 21rem;
     }
 }
 
@@ -825,6 +872,11 @@ body {
         width: 40rem;
         padding-top: 0rem;
     } */
+
+    .pr-damage-content {
+        width: 30rem;
+        margin-left: calc(50% - 41rem);
+    }
 }
 
 /* checkbox */
@@ -979,6 +1031,44 @@ body {
     }
 }
 
+/* uplaod image */
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 2rem 2rem 2.7rem 2rem;
+    text-align: center;
+}
+#drop-area.highlight {
+    border-color: purple;
+}
+.pr-image-uploader {
+    margin-bottom: 10px;
+}
+.upload-image-button {
+    font-size: 0.9rem;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    color: white;
+    background-color: #7a5586;
+    cursor: pointer;
+}
+#fileElem {
+    display: none;
+}
+.upload-image-icon {
+    color: #ccc;
+    font-size: 2.5rem;
+}
+.upload-image-txt {
+    margin-top: 0.5rem;
+    margin-bottom: 1.7rem;
+    font-size: 0.9rem;
+}
+
 /* override */
 .v-application a {
     color: none !important;
@@ -995,4 +1085,7 @@ body {
 .row, 
 .col-xs, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     box-sizing: border-box !important;
+}
+.pr-app-container {
+    min-height: calc(100vh - 187px);
 }
