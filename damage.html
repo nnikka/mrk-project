@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./flexboxgrid.min.css" type="text/css">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <nav class="pr-navigation">
+        <div class="pr-navigation-content">
+            <img src="./images/little-logo2.png" class="pr-nav-logo" />
+            <i onclick="openMenu()" class="fa fa-bars pr-nav-menu-butt" aria-hidden="true"></i>
+        </div>
+
+        <div class="pr-menu" id="appMainMenu">
+            <div class="pr-menu-content">
+                <div class="pr-menu-header">
+                    <img src="./images/little-logo2.png" class="pr-menu-logo" />
+                    <i onclick="closeMenu()" class="fa fa-close pr-nav-menu-close-butt" aria-hidden="true"></i>
+                </div>
+                <div class="pr-menu-body">
+                    <a class="pr-menu-link" href="#">Price My Car</a>
+                    <a class="pr-menu-link" href="#">My Account</a>
+                    <a class="pr-menu-link" href="#">Search History</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="pr-app-container">
+
+        <div class="pr-damage-container">
+            <div class="pr-warning">
+                <p>
+                    <i class="fa fa-warning"></i>
+                    Please enter a valid car registration number
+                </p>
+            </div>
+        </div>
+
+        <div class="pr-damage-content">
+            <div><br></div>
+            <h3 class="header-3">Specify Car Damage</h3>
+            <div><br></div>
+            <div><br></div>
+            <div>
+                <div>
+                    <label class="pr-container">
+                        My car has no damage
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark checkmark-up-over"></span>
+                    </label>
+                    <br>
+                    <label class="pr-container">
+                        My car has damage
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark checkmark-up-over"></span>
+                    </label>
+                </div>
+            </div>
+            <div><br></div>
+            <div>
+                <textarea class="pr-bg-input" style="height: 9rem" placeholder="Specify car damage"></textarea>
+            </div>
+            <p class="pr-info-light-txt-bld">
+                Upload an image (optional)
+            </p>
+            <div id="drop-area">
+                <div class="pr-image-uploader">
+                    <div>
+                        <i class="fa fa-image upload-image-icon"></i>
+                    </div>
+                    <p class="upload-image-txt">Drag image to upload or</p>
+                    <input type="file" id="fileElem" multiple accept="image/*">
+                    <label class="upload-image-button" for="fileElem">Select some files</label>
+                </div>
+            </div>
+            <div><br></div>
+            <div class="gallery">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="galery-image-row">
+                            <img src="./images/car.jpg" />
+                            <button>
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="galery-image-row">
+                            <img src="./images/car.jpg" />
+                            <button>
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="galery-image-row">
+                            <img src="./images/car.jpg" />
+                            <button>
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="pr-footer">
+        <div class="pr-footer-content">
+            <h4 class="footer-header">
+                price<span>mycar</span>
+            </h4>
+            <p class="pr-footer-text">c 2019 Price My Car. All rights reserved.</p>
+            <p class="pr-footer-text">Designed by TESLI boy</p>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    function openMenu() {
+        document.getElementById("appMainMenu").style.display = "block";
+    }
+    function closeMenu() {
+        document.getElementById("appMainMenu").style.display = "none";
+    }
+</script>
+
+</html>
