@@ -474,6 +474,54 @@ body {
     margin-bottom: 1rem;
 }
 
+/* search */
+.pr-table-button {
+    border: none;
+    padding: 0.4rem 0.7rem;
+    border-radius: 5px;
+    color: white;
+    background: #ff7474;
+    cursor: pointer;
+}
+
+.pr-rsp-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+  
+.pr-rsp-table th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.pr-rsp-table tr th {
+    margin: 0;
+    white-space: nowrap;
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+    color: #01024E;
+    font-weight: bold;
+}
+
+.pr-rsp-table tr td {
+    font-size: 0.8rem;
+    color: #414141;
+}
+
+.pr-rsp-table tr td:last-child {
+    text-align: center;
+}
+
+.pr-rsp-table tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+.pr-table-container {
+    padding: 1rem;
+}
+
 /* media query more than 425px */
 @media (min-width: 425px) {
     .pr-login-page-container {
@@ -580,6 +628,10 @@ body {
         padding-right: 5rem;
         width: calc(100% - 10rem);
     }
+
+    .pr-table-container {
+        padding: 2rem 2.5rem;
+    }
     
 }
 
@@ -657,6 +709,10 @@ body {
     .pr-notifications-container {
         width: 25rem;
         margin-left: calc(50% - 18rem);
+    }
+
+    .pr-table-container {
+        padding: 2rem 6rem;
     }
 }
 
@@ -756,6 +812,10 @@ body {
     .pr-damage-content {
         padding: 3rem 17rem;
     }
+
+    .pr-table-container {
+        padding: 2rem 7rem;
+    }
 }
 
 /* media query more than 1024px */
@@ -833,6 +893,10 @@ body {
 
     .pr-damage-content {
         padding: 3rem 21rem;
+    }
+
+    .pr-table-container {
+        padding: 2rem 8rem;
     }
 }
 
@@ -920,6 +984,11 @@ body {
     .pr-damage-content {
         width: 30rem;
         margin-left: calc(50% - 41rem);
+    }
+
+    .pr-table-container {
+        width: 55rem;
+        margin-left: calc(50% - 32rem);
     }
 }
 
@@ -1113,6 +1182,24 @@ body {
     font-size: 0.9rem;
 }
 
+/* scrollBar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #01024E; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #01024E; 
+}
+
 /* override */
 .v-application a {
     color: none !important;
@@ -1132,4 +1219,9 @@ body {
 }
 .pr-app-container {
     min-height: calc(100vh - 187px);
+}
+
+button:disabled {
+    background-color: #ff646485;
+    cursor: no-drop;
 }
