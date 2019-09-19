@@ -402,6 +402,9 @@ body {
     position: fixed;
     z-index: 100;
     top: 4.8rem;
+    overflow: auto;
+    overflow: auto;
+    height: calc(100% - 8rem);
 }
 
 .pr-agree-container {
@@ -638,6 +641,7 @@ body {
     .pr-agree-content {
         padding: 2rem 5rem;
         min-height: calc(100vh - 13.7rem);
+        height: calc(100% - 8rem);
     }
 
     .pr-infobox-container {
@@ -843,6 +847,7 @@ body {
 
     .pr-agree-content {
         padding: 4rem 20rem;
+        height: calc(100% - 12rem);
     }
 
     .pr-infobox-container {
@@ -1050,7 +1055,9 @@ body {
 
     .pr-agree-content {
         width: 30rem;
-        margin-left: calc(50% - 40rem);
+        padding-left: calc(50% - 15rem);
+        padding-right: calc(50% - 15rem);
+        height: calc(100% - 16rem);
     }
 
     .pr-infobox-container {
