@@ -13,6 +13,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./flexboxgrid.min.css" type="text/css">
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -43,37 +44,68 @@
 
     <div class="pr-app-container">
 
-        <div class="pr-reg-container">
+        <!-- <div class="pr-reg-container">
             <div class="pr-warning">
                 <p>
                     <i class="fa fa-warning"></i>
                     Please enter a valid car registration number
                 </p>
             </div>
+        </div> -->
+
+        <div class="pr-reg-header-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h2 class="reg-header">
+                        EXCUSIVE:
+                    </h2>
+                    <p class="reg-sub-header">
+                        CAR SELLERS KIT
+                    </p>
+                    <p class="reg-header-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="reg-header-image-container">
+                        <img src="./images/aymetriccard.png" />
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="pr-reg-content">
-            <h3 class="header-3">
-                Welcome to price My Car
-            </h3>
             <h4 class="header-4">
                 Enter your vehicle details to begin
             </h4>
             <br>
-            <form>
-                <input class="pr-bg-input" type="text" placeholder="Enter Car Reg" />
-                <input class="pr-bg-input" type="text" placeholder="Enter Car Miliege" />
-                <div><br></div>
-                <label class="container">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <div><br></div>
-                <button class="pr-mega-button pr-pink-bg">
-                    Enter
-                </button>
-            </form>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <input class="pr-bg-input" type="text" placeholder="Enter Car Reg" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <input class="pr-bg-input" type="text" placeholder="Enter Car Miliege" />
+                </div>
+                <div class="col-xs-12"><br></div>
+                <div class="col-xs-12">
+                    <label class="pr-container">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the industry's standard <a class="pr-default-link" href="#">dummy text</a>
+                        ever
+                        since the 1500s
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="col-xs-12"><br></div>
+                <div class="col-xs-12 pr-text-center">
+                    <button class="pr-mega-button pr-pink-bg pr-reg-btn">
+                        Enter
+                    </button>
+                </div>
+            </div>
         </div>
 
     </div>
